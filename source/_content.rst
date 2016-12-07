@@ -22,6 +22,7 @@ Edit document
 
        Go to  ${PLONE_URL}/new-document/edit
        Capture page screenshot  _screenshots/document-edit.png
+       Click button  css=#form-buttons-cancel
 
 View document
 .............
