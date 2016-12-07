@@ -36,6 +36,10 @@ Test Setup
    ...  default=Jane Doe
    Create user  ${user_id}  Member  fullname=${user_fullname}
    Set suite variable  ${USER_ID}  ${user_id}
+   Go To  ${PLONE_URL}/@@site-controlpanel
+   Wait until page contains element  form.widgets.toolbar_position:list
+   Select From List  css=#form-widgets-toolbar_position  Top
+   Click Button  Save
    Disable autologin
 
 Test Teardown
